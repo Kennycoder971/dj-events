@@ -56,6 +56,8 @@ export async function getStaticPaths() {
   const paths = events.map((evt) => ({
     params: { slug: evt.slug },
   }));
+
+  console.log(paths);
   return {
     paths,
     fallback: true,
